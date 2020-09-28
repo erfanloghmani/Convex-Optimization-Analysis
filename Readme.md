@@ -1,19 +1,40 @@
-# Analyzing some Convex Optimization Algorithms and Enhancement methods
+# Convex Optimization Course Project Materials
 
-this repo contains two notebooks that investigate on convex optimization algorithms and enhancement methods. This analyze was done to find a good project for Convex Optimization course.
+This repo contains project definition and implementations for Convex Optimization Course. Currently, just the Persian version of the project definition is available.
 
-## Second order methods
-This notebook compares:
-- Gradient Decent
+- Course Name: Convex Optimization
+- Course Number: CE-40837
+- Instructor: Dr. Mahdi Jafari Siavoshani
+- Institute: Sharif University of Technology
+- Semester: Spring 2020
+- Author: Erfan Loghmani
+
+
+The project asks students to investigate two main areas in convex optimization. First, second-order methods such as the newton method and natural gradient. And second, variance reduction techniques like mini-batch SGD and SVRG.
+
+## Second-order methods
+In this part, students have to implement & compare following algorithms:
+- Gradient Descent
 - Newton Method
 - Natural Gradient Method
 
-algorithms on a simple classification problem with artificially generated data. It also checks the effect of reparametrization on each algorithm.
+Then evaluate them on a simple classification problem with artificially generated data. They also have to check the effect of reparametrization on each algorithm.
 
-## SVRG
-This notebook compares:
-- Stochastic Gradient Decent
-- Mini-batch Stochastic Gradient Decent
+
+## Variance reduction
+In this part, students should implement & compare on these algorithms:
+- Stochastic Gradient Descent
+- Mini-batch Stochastic Gradient Descent
 - SVRG (Stochastic Variance Reduced Gradient)
 
-algorithms on learning multi-class classification on MNIST dataset. Algorithms are evaluated with their loss decay, accuracy, and variance.
+Also, evaluate them on learning multi-class classification for the MNIST dataset. They have to evaluate the results based on loss decay, accuracy, and variance.
+
+## Implementations
+Implementations are available in the `code` directory.
+
+To install requirements use `pip install -r requirements.txt`.
+
+You can also find implementations in colab:
+
+- [Second-order methods](https://colab.research.google.com/drive/1b7PgpI-ZpczfCyPZtvCnqJHZoaKDjBUR?usp=sharing)
+- [Variance reduction](https://colab.research.google.com/drive/1AiCVsJLRfxRY6pu0aQd9T6lXssvD-uoY?usp=sharing)
